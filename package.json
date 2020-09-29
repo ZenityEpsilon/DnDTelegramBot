@@ -5,31 +5,38 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --env.production=false",
-    "build": "webpack --env.production=true"
+    "build": "webpack --env.production=true",
+    "bot": "node bot.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/client": "3.2.0",
-    "graphql": "15.3.0",
+    "bootstrap": "5.0.0-alpha1",
     "regenerator-runtime": "0.13.7",
+    "sweetalert2": "10.3.5",
+    "telegram-bot-api": "2.0.1",
     "vue": "3.0.0",
     "vue-router": "4.0.0-beta.11",
-    "vuex": "4.0.0-beta.4"
+    "vuex": "4.0.0-beta.4",
+    "websocket": "1.0.32"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
     "@babel/preset-env": "7.11.5",
     "@vue/compiler-sfc": "3.0.0",
+    "assert": "2.0.0",
     "babel-loader": "8.1.0",
     "core-js": "3.6.5",
     "css-loader": "4.3.0",
     "file-loader": "6.1.0",
+    "less": "3.12.2",
+    "less-loader": "7.0.1",
     "postcss-loader": "3.0.0",
     "postcss-scss": "2.1.1",
     "sass": "1.26.11",
     "sass-loader": "10.0.2",
     "terser-webpack-plugin": "4.2.2",
+    "util": "0.12.3",
     "vue-loader": "16.0.0-beta.7",
     "vue-style-loader": "4.1.2",
     "webpack": "5.0.0-rc.0",

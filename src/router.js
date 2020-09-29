@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Page1 from "./pages/Page1.vue";
+import index from "./pages/index.vue";
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: "/",
-      name: "page1",
-      component: Page1,
+      name: "index",
+      component: index,
     },
     {
-      path: "/page2",
-      name: "page2",
-      component: () => import(/* webpackChunkName: "Page2" */ "./pages/Page2.vue"),
+      path: "/botex",
+      name: "botex",
+      component: () => import(/* webpackChunkName: "Page2" */ "./pages/botex.vue"),
     },
   ],
 });

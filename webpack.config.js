@@ -36,10 +36,18 @@ module.exports = env => {
     module: {
       rules: [
         {
-          test: /\.(css|sass|scss)$/,
-          include: [
-            path.resolve(__dirname, "./src"),
+          test: /\.less$/,
+          use: [
+            'vue-style-loader',
+            'css-loader',
+            'less-loader'
           ],
+        },
+        {
+          test: /\.(css|sass|scss)$/,
+          /*include: [
+            path.resolve(__dirname, "./src"),
+          ],*/
           use: [
             "vue-style-loader",
             {

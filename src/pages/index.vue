@@ -19,7 +19,7 @@ import VueImage from '../components/VueImage.vue';
 import godcode from '../assets/godcode.jpg';
 
 export default {
-  name: "Page2",
+  name: "botex",
   components: {
     VueImage,
   },

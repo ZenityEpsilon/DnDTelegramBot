@@ -28,9 +28,12 @@
 <script>
 import 'sweetalert2/dist/sweetalert2.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/less/main.less';
+import './assets/scss/main.scss';
 
 export default {
 	name: 'App',
+	created() {
+		this.$store.dispatch('load');
+	},
 };
 </script>

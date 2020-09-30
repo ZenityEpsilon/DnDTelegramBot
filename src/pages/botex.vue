@@ -13,6 +13,7 @@
 		</select>
 		<input type="text" v-model="message" class="from-control" />
 		<button @click="sendMessage" class="btn btn-primary" type="button">Отправить</button>
+		<button @click="getChannels" class="btn btn-primary" type="button">Получить информацию</button>
 		<pre>{{ user }}</pre>
 		<pre>{{ users }}</pre>
 		<pre>{{ channels }}</pre>

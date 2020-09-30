@@ -17,14 +17,7 @@ bot.start()
 
 // Receive messages via event callback
 bot.on('update', (update) => {
-	console.log(update.message);
 	api.sendResult([{ name: 'addMessage', data: update.message }]);
-	/*console.log(update);
-	bot.sendMessage({chat_id, text: "Hello world!"}).catch((error) => console.error(error));
-	bot.getUserProfilePhotos({user_id: chat_id}).then((result) => {
-		bot.sendPhoto({chat_id, photo: result.photos[0][0].photos_id});
-		console.log(result);
-	}).catch((error) => console.error(error));*/
 });
 
 let server = http.createServer(function (request, response) {

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "5.0.0-alpha1",
+    "lodash": "4.17.20",
     "regenerator-runtime": "0.13.7",
     "sweetalert2": "10.3.5",
     "telegram-bot-api": "2.0.1",

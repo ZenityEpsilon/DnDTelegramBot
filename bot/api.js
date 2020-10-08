@@ -38,12 +38,12 @@ class api {
 	sendMessage(data) {
 		this.execute('sendMessage', data, (user) => {
 			this.sendResult(
-				[],
+				[{ name: 'addMessage', data: user }],
 				[
 					{
 						name: 'notice',
 						data: {
-							type: 'success',
+							icon: 'success',
 							title: 'Отправлено',
 							toast: true,
 							position: 'top-end',

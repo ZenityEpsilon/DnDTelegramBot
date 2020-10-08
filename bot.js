@@ -12,11 +12,13 @@ bot.setMessageProvider(mp);
 bot.start()
 	.then(() => {
 		console.log('API is started');
+		api.sendMessage({ chat_id: '-1001265432724', text: 'Батя в здании' });
 	})
 	.catch(console.err);
 
 // Receive messages via event callback
 bot.on('update', (update) => {
+	console.log(update);
 	api.sendResult([{ name: 'addMessage', data: update.message }]);
 });
 
@@ -72,5 +74,6 @@ wsServer.on('request', function (request) {
 	});
 	connection.on('close', function (/*reasonCode, description*/) {
 		console.log(new Date() + ' Peer ' + connection.remoteAddress + ' disconnected.');
+		//api.sendMessage({ chat_id: '-1001265432724', text: 'Злые вы, ушёл я от вас.' });
 	});
 });

@@ -1,0 +1,35 @@
+.chat {
+	margin: 15px;
+	&-container {
+		overflow: auto;
+		border: 1px solid black;
+		box-sizing: content-box;
+		padding: 15px;
+		height: 700px;
+		background-color: #08457e;
+	}
+	&-message {
+		margin: 5px 0px;
+		display: flex;
+		&_self {
+			justify-content: flex-end;
+			.chat-messageItem {
+				border-radius: 15px 15px 0 15px;
+			}
+		}
+		&Item {
+			display: inline-block;
+			background-color: #003153;
+			color: white;
+			padding: 5px;
+			border-radius: 15px 15px 15px 0;
+		}
+	}
+	&-date {
+		display: inline-block;
+		position: relative;
+		font-size: 10px;
+		bottom: 0;
+		right: 0;
+	}
+}

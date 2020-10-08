@@ -1,0 +1,13 @@
+.navChannels {
+	&-item {
+		list-style: none;
+		background-color: #273c62;
+		margin: 5px 0px;
+		padding: 5px;
+		&:hover,
+		&_active {
+			background-color: #19263e;
+			cursor: pointer;
+		}
+	}
+}

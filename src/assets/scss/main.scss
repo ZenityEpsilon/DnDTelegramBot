@@ -1,1 +1,8 @@
-@import "blocks/nav.scss";
+@import 'blocks/nav.scss';
+@import 'blocks/chat.scss';
+@import 'blocks/navChannels.scss';
+
+body {
+	background-color: black;
+	color: white;
+}
